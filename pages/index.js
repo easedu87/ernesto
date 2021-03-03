@@ -1,25 +1,4 @@
-const ewelink = require('ewelink-api');
-
-export async function getServerSideProps() {
-    const connection = new ewelink({
-        email: 'edu.arruda.souza@gmail.com',
-        password: 'cz11m8fu',
-        region: 'us',
-    });
-
-    // const devices = await connection.getDevices();
-    const status = await connection.setDevicePowerState('1000e4bff4', 'toggle');
-    
-    return {
-        props: {
-            devices: status
-        }
-    }
-}
-
 function Home(props) {
-
-    // console.log("*************", props);
 
     const registerUser = event => {
         event.preventDefault();
