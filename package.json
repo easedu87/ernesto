@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/easedu87/ernesto#readme",
   "dependencies": {
+    "ewelink-api": "^3.1.1",
     "next": "^10.0.7",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
